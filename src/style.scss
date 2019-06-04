@@ -1,0 +1,165 @@
+$err: #f33f3f;
+$valid: #3d9abb;
+$txt: #6d6d6d;
+$txt: #6d6d6d;
+$txt_light: lighten($txt, 15%);
+$txt_lg: lighten($txt, 5%);
+$t: .07s;
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	font-family: 'DIN Pro';
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+::-moz-selection {
+    background-color: rgba(61, 154, 187, 0.3);
+    text-shadow: none;
+}
+::selection {
+    background-color: rgba(61, 154, 187, 0.3);
+    text-shadow: none;
+}
+:focus{
+	outline: none;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+textarea {
+    resize: vertical;
+}
+button{
+	font-family: 'DIN Pro';
+}
+input,textarea{
+	box-sizing: border-box;
+	font-family: 'DIN Pro';
+}
+a{
+   text-decoration: none;
+   color: #000;
+}
+sup{
+    vertical-align: super;
+    font-size: 8px;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   _container _body
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+body,
+html {
+    font-family: 'DIN Pro';
+    font-weight: 400;
+    font-size: 16px;
+    cursor: default;
+    background-color:  #e6e6e6;
+    overflow-x: hidden;
+   animation: sc 4s;
+}
+
+.btn{
+	user-select: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #3d9abb;
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+
+}
+
+::-webkit-scrollbar-track {
+  margin:7px 0 ;
+  border: none;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: $txt_light;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  &:hover {
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	background: $txt_lg;
+  }
+  &:active{
+	  background: $txt;
+  }
+}

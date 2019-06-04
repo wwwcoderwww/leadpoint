@@ -1,0 +1,63 @@
+$err: #f33f3f;
+$valid: #3d9abb;
+$valid_drk: darken($valid, 10%);
+$valid_lg: lighten($valid, 5%);
+$txt: #6d6d6d;
+$t: .07s;
+
+.s_pagination{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+    user-select: none;
+    &__section{
+        overflow-x: hidden;
+        padding:0 10px;
+        border-radius: 5px;
+    }
+    &__wrp{
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        transition: $t*5;
+    }
+    &__left,
+    &__right,
+    &__numb{
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        background: #fff;
+        opacity: .86;
+        box-shadow: 0 0 10px 0 #c3c3c3;
+        font-weight: bold;
+        cursor: pointer;
+        transition: .1s;
+        &:hover{
+            box-shadow: 0 5px 10px 0 #c3c3c3;
+            opacity: 1;
+        }
+        &.current{
+            border:2px solid $valid;
+            color: $valid;
+        }
+        &.default{
+            opacity: .5;
+            pointer-events: none;
+        }
+
+    }
+    &__numb{
+        margin-right: 10px;
+    }
+}
